@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.9.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack/Swift (3.6.0):
+    - CocoaLumberjack/Core
+  - Himotoki (4.0.0)
+  - Nuke (8.3.0)
+  - RxAlamofire (5.0.0):
+    - RxAlamofire/Core (= 5.0.0)
+  - RxAlamofire/Core (5.0.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack/Swift
+  - Himotoki
+  - Nuke
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Himotoki
+    - Nuke
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  Himotoki: 966c1ce4fe08eb36994cd0a7078bb444b7df4f42
+  Nuke: 775e35cf3c12cde80b3bff5fc7a77abb0cf29d0b
+  RxAlamofire: e7875a012aff55345672d0f70a2a9cd6aeb0f211
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: ab9c0c11831a689269186ff8d29bda433d578161
+
+COCOAPODS: 1.10.0

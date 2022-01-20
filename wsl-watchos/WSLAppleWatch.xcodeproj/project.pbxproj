@@ -1,0 +1,1274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BD3C5D98AF00C26EC368F19 /* Pods_WSLAppleWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EEC962CEB797CCBF48E4F0 /* Pods_WSLAppleWatch_WatchKit_Extension.framework */; };
+		54B377D05E0C34F8F574669F /* Pods_WSLAppleWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6BE5F03085D03DF99900AF /* Pods_WSLAppleWatch.framework */; };
+		8E4342AC239DC5AB0079F22A /* EnvConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4342AA239DC5AB0079F22A /* EnvConfigViewModel.swift */; };
+		8E4342AD239DC5AB0079F22A /* EnvConfigInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4342AB239DC5AB0079F22A /* EnvConfigInterfaceController.swift */; };
+		8E4342AF239E251C0079F22A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4342AE239E251C0079F22A /* HealthKit.framework */; };
+		8E627F2523E15E2C0074EBB6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E627F2423E15E2B0074EBB6 /* Priority.swift */; };
+		8E6849A6241845A4004DEA1B /* LogFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6849A5241845A4004DEA1B /* LogFileService.swift */; };
+		8E92167F239C91B100D279E3 /* StatsAuxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92167D239C91B100D279E3 /* StatsAuxViewModel.swift */; };
+		8E921680239C91B100D279E3 /* StatsAuxInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E92167E239C91B100D279E3 /* StatsAuxInterfaceController.swift */; };
+		8E9740012387C47F004FF34D /* WSLPushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9740002387C47F004FF34D /* WSLPushService.swift */; };
+		8EA415422394719F00E36D48 /* EventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA415412394719F00E36D48 /* EventStatus.swift */; };
+		906BFCA12352DC1A00958D44 /* WSLApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCA02352DC1A00958D44 /* WSLApiService.swift */; };
+		906BFCA32352DDAA00958D44 /* SwinjectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCA22352DDAA00958D44 /* SwinjectUtil.swift */; };
+		906BFCA52352DE3000958D44 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCA42352DE3000958D44 /* Network.swift */; };
+		906BFCA72352DEF600958D44 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCA62352DEF600958D44 /* Tour.swift */; };
+		906BFCA9235532CA00958D44 /* ToursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCA8235532CA00958D44 /* ToursViewModel.swift */; };
+		906BFCAB2355338700958D44 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCAA2355338700958D44 /* Extensions.swift */; };
+		906BFCAE23553F3800958D44 /* AthletesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCAD23553F3800958D44 /* AthletesInterfaceController.swift */; };
+		906BFCB023553F4500958D44 /* AthletesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCAF23553F4500958D44 /* AthletesViewModel.swift */; };
+		906BFCB223553F7500958D44 /* AthleteRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCB123553F7500958D44 /* AthleteRowController.swift */; };
+		906BFCB42355403500958D44 /* RxInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCB32355403500958D44 /* RxInterfaceController.swift */; };
+		906BFCB62355614600958D44 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCB52355614600958D44 /* Athlete.swift */; };
+		906BFCBE2355840E00958D44 /* StatsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCBD2355840E00958D44 /* StatsInterfaceController.swift */; };
+		906BFCC02355841800958D44 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCBF2355841800958D44 /* StatsViewModel.swift */; };
+		906BFCC22356CB0400958D44 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCC12356CB0400958D44 /* Event.swift */; };
+		906BFCC52356CC3A00958D44 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCC42356CC3A00958D44 /* EventsViewModel.swift */; };
+		906BFCC72356CC4C00958D44 /* EventsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCC62356CC4C00958D44 /* EventsInterfaceController.swift */; };
+		906BFCC92356CCD100958D44 /* EventRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCC82356CCD100958D44 /* EventRowController.swift */; };
+		906BFCCC23576AAD00958D44 /* HeatAthlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCCB23576AAD00958D44 /* HeatAthlete.swift */; };
+		906BFCCE235771F400958D44 /* Heat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCCD235771F400958D44 /* Heat.swift */; };
+		906BFCD02357A56900958D44 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BFCCF2357A56900958D44 /* Round.swift */; };
+		908E9376234E6E3800C38C08 /* WSL Competitors Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 908E9375234E6E3800C38C08 /* WSL Competitors Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		908E937C234E6E3800C38C08 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908E937A234E6E3800C38C08 /* Interface.storyboard */; };
+		908E937E234E6E3900C38C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908E937D234E6E3900C38C08 /* Assets.xcassets */; };
+		908E9385234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 908E9384234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		908E938C234E6E3900C38C08 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E938B234E6E3900C38C08 /* ExtensionDelegate.swift */; };
+		908E938E234E6E3900C38C08 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E938D234E6E3900C38C08 /* NotificationController.swift */; };
+		908E9390234E6E3A00C38C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908E938F234E6E3A00C38C08 /* Assets.xcassets */; };
+		908E93A6234E721000C38C08 /* ToursInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93A5234E721000C38C08 /* ToursInterfaceController.swift */; };
+		908E93A8234E7A2E00C38C08 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93A7234E7A2E00C38C08 /* NetworkingService.swift */; };
+		908E93AA234E7BAB00C38C08 /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93A9234E7BAB00C38C08 /* OAuth2Handler.swift */; };
+		908E93AD234E7CBC00C38C08 /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93AC234E7CBC00C38C08 /* OAuthToken.swift */; };
+		908E93AF234E946D00C38C08 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93AE234E946D00C38C08 /* App.swift */; };
+		908E93B1234E949500C38C08 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E93B0234E949500C38C08 /* AppEnvironment.swift */; };
+		90ABD8C3234FDC92004189A9 /* SimpleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ABD8C2234FDC92004189A9 /* SimpleRowController.swift */; };
+		90AEF0AF234FAC7200019028 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEF0AE234FAC7200019028 /* Constant.swift */; };
+		90AEF0B1234FADCE00019028 /* Environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF0B0234FADCE00019028 /* Environments.plist */; };
+		9205B83B3940B6E11BA2074C /* Pods_WSLAppleWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13238C5C7A3D46B9CD1D6C52 /* Pods_WSLAppleWatch_WatchKit_App.framework */; };
+		DE6937A9259B240700E07CCD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6937A8259B240700E07CCD /* LocationService.swift */; };
+		DE86AAA125BF78840064AF61 /* StatsEventTakeoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86AAA025BF78840064AF61 /* StatsEventTakeoverController.swift */; };
+		DE86AACD25BFA0400064AF61 /* HeatPulsing.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE86AACC25BFA0400064AF61 /* HeatPulsing.sks */; };
+		DE86AAD125BFA0570064AF61 /* HeatPulsing.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE86AACC25BFA0400064AF61 /* HeatPulsing.sks */; };
+		DE86AAF425C49E0B0064AF61 /* StatsTakeOverStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86AAF325C49E0B0064AF61 /* StatsTakeOverStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		908E9377234E6E3800C38C08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 908E936B234E6E3800C38C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 908E9374234E6E3800C38C08;
+			remoteInfo = "WSLAppleWatch WatchKit App";
+		};
+		908E9386234E6E3900C38C08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 908E936B234E6E3800C38C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 908E9383234E6E3900C38C08;
+			remoteInfo = "WSLAppleWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		908E9398234E6E3A00C38C08 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				908E9385234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908E939C234E6E3A00C38C08 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				908E9376234E6E3800C38C08 /* WSL Competitors Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13238C5C7A3D46B9CD1D6C52 /* Pods_WSLAppleWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSLAppleWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE428DAA45FDBEE4E06F49D /* Pods-WSLAppleWatch WatchKit App.debugproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.debugproduction.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.debugproduction.xcconfig"; sourceTree = "<group>"; };
+		1F6DCA2AFF70445B26BEE53B /* Pods-WSLAppleWatch.debugproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.debugproduction.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.debugproduction.xcconfig"; sourceTree = "<group>"; };
+		349C5923030C87A71EFD668B /* Pods-WSLAppleWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		37B33821E15932124FCE86E7 /* Pods-WSLAppleWatch WatchKit App.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.stage.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.stage.xcconfig"; sourceTree = "<group>"; };
+		397183B5626120435CD20D79 /* Pods-WSLAppleWatch WatchKit Extension.debugproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.debugproduction.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.debugproduction.xcconfig"; sourceTree = "<group>"; };
+		3BD35627BC90D07A50F1D00D /* Pods-WSLAppleWatch WatchKit App.slytrunk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.slytrunk.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.slytrunk.xcconfig"; sourceTree = "<group>"; };
+		3D7D3280D77AB504EC4AEB4C /* Pods-WSLAppleWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.debug.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		5381C0095028CAFE9327AB9E /* Pods-WSLAppleWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.release.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.release.xcconfig"; sourceTree = "<group>"; };
+		5B8151D45FF831E94ACDCF7C /* Pods-WSLAppleWatch WatchKit Extension.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.stage.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.stage.xcconfig"; sourceTree = "<group>"; };
+		836CB7E44DD11EE6B1AC04F0 /* Pods-WSLAppleWatch WatchKit App.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.production.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.production.xcconfig"; sourceTree = "<group>"; };
+		8C6BE5F03085D03DF99900AF /* Pods_WSLAppleWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSLAppleWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2E51CE23865D6500D7CFE8 /* WSLAppleWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WSLAppleWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		8E4342AA239DC5AB0079F22A /* EnvConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvConfigViewModel.swift; sourceTree = "<group>"; };
+		8E4342AB239DC5AB0079F22A /* EnvConfigInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvConfigInterfaceController.swift; sourceTree = "<group>"; };
+		8E4342AE239E251C0079F22A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		8E4342B2239EB1760079F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E627F2423E15E2B0074EBB6 /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		8E6849A5241845A4004DEA1B /* LogFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileService.swift; sourceTree = "<group>"; };
+		8E92167D239C91B100D279E3 /* StatsAuxViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsAuxViewModel.swift; sourceTree = "<group>"; };
+		8E92167E239C91B100D279E3 /* StatsAuxInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsAuxInterfaceController.swift; sourceTree = "<group>"; };
+		8E9740002387C47F004FF34D /* WSLPushService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLPushService.swift; sourceTree = "<group>"; };
+		8EA415412394719F00E36D48 /* EventStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStatus.swift; sourceTree = "<group>"; };
+		906BFCA02352DC1A00958D44 /* WSLApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLApiService.swift; sourceTree = "<group>"; };
+		906BFCA22352DDAA00958D44 /* SwinjectUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectUtil.swift; sourceTree = "<group>"; };
+		906BFCA42352DE3000958D44 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		906BFCA62352DEF600958D44 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		906BFCA8235532CA00958D44 /* ToursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewModel.swift; sourceTree = "<group>"; };
+		906BFCAA2355338700958D44 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		906BFCAD23553F3800958D44 /* AthletesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesInterfaceController.swift; sourceTree = "<group>"; };
+		906BFCAF23553F4500958D44 /* AthletesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesViewModel.swift; sourceTree = "<group>"; };
+		906BFCB123553F7500958D44 /* AthleteRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteRowController.swift; sourceTree = "<group>"; };
+		906BFCB32355403500958D44 /* RxInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxInterfaceController.swift; sourceTree = "<group>"; };
+		906BFCB52355614600958D44 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		906BFCBD2355840E00958D44 /* StatsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInterfaceController.swift; sourceTree = "<group>"; };
+		906BFCBF2355841800958D44 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		906BFCC12356CB0400958D44 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		906BFCC42356CC3A00958D44 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		906BFCC62356CC4C00958D44 /* EventsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsInterfaceController.swift; sourceTree = "<group>"; };
+		906BFCC82356CCD100958D44 /* EventRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowController.swift; sourceTree = "<group>"; };
+		906BFCCB23576AAD00958D44 /* HeatAthlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatAthlete.swift; sourceTree = "<group>"; };
+		906BFCCD235771F400958D44 /* Heat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heat.swift; sourceTree = "<group>"; };
+		906BFCCF2357A56900958D44 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		908E9371234E6E3800C38C08 /* WSLAppleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSLAppleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E9375234E6E3800C38C08 /* WSL Competitors Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSL Competitors Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E937B234E6E3800C38C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		908E937D234E6E3900C38C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		908E937F234E6E3900C38C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908E9384234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WSLAppleWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E938B234E6E3900C38C08 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		908E938D234E6E3900C38C08 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		908E938F234E6E3A00C38C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		908E9391234E6E3A00C38C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908E9392234E6E3A00C38C08 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		908E93A5234E721000C38C08 /* ToursInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursInterfaceController.swift; sourceTree = "<group>"; };
+		908E93A7234E7A2E00C38C08 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		908E93A9234E7BAB00C38C08 /* OAuth2Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Handler.swift; sourceTree = "<group>"; };
+		908E93AC234E7CBC00C38C08 /* OAuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
+		908E93AE234E946D00C38C08 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		908E93B0234E949500C38C08 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		90ABD8C2234FDC92004189A9 /* SimpleRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRowController.swift; sourceTree = "<group>"; };
+		90AEF0AE234FAC7200019028 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		90AEF0B0234FADCE00019028 /* Environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
+		93EEC962CEB797CCBF48E4F0 /* Pods_WSLAppleWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSLAppleWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980FCD0C1A0AF3C8E11B3487 /* Pods-WSLAppleWatch WatchKit Extension.slytrunk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.slytrunk.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.slytrunk.xcconfig"; sourceTree = "<group>"; };
+		B6A4995F41C453B9A0700DF3 /* Pods-WSLAppleWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BA806E0F8B8E71E6811EAB65 /* Pods-WSLAppleWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		BEC9677B8BBED08FBFB112FB /* Pods-WSLAppleWatch.slytrunk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.slytrunk.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.slytrunk.xcconfig"; sourceTree = "<group>"; };
+		C71826912AD7E36E9F110734 /* Pods-WSLAppleWatch.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.stage.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.stage.xcconfig"; sourceTree = "<group>"; };
+		DE6937A8259B240700E07CCD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		DE86AAA025BF78840064AF61 /* StatsEventTakeoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsEventTakeoverController.swift; sourceTree = "<group>"; };
+		DE86AACC25BFA0400064AF61 /* HeatPulsing.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HeatPulsing.sks; sourceTree = "<group>"; };
+		DE86AAF325C49E0B0064AF61 /* StatsTakeOverStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTakeOverStatus.swift; sourceTree = "<group>"; };
+		DE8B6CCEBD6C019971F71DE6 /* Pods-WSLAppleWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit App/Pods-WSLAppleWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		F2AE1ED8A82BAD62216B74EF /* Pods-WSLAppleWatch WatchKit Extension.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch WatchKit Extension.production.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension.production.xcconfig"; sourceTree = "<group>"; };
+		FE1628180FC9E4929CB843A6 /* Pods-WSLAppleWatch.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLAppleWatch.production.xcconfig"; path = "Target Support Files/Pods-WSLAppleWatch/Pods-WSLAppleWatch.production.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EAB11BB5604FBB17FEF5565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B377D05E0C34F8F574669F /* Pods_WSLAppleWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908E9381234E6E3900C38C08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD3C5D98AF00C26EC368F19 /* Pods_WSLAppleWatch_WatchKit_Extension.framework in Frameworks */,
+				8E4342AF239E251C0079F22A /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F1F5D2E5101BC2691F30A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9205B83B3940B6E11BA2074C /* Pods_WSLAppleWatch_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4342A9239DC5AB0079F22A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				8E4342AA239DC5AB0079F22A /* EnvConfigViewModel.swift */,
+				8E4342AB239DC5AB0079F22A /* EnvConfigInterfaceController.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		8E92167C239C91B100D279E3 /* stats_aux */ = {
+			isa = PBXGroup;
+			children = (
+				8E92167D239C91B100D279E3 /* StatsAuxViewModel.swift */,
+				8E92167E239C91B100D279E3 /* StatsAuxInterfaceController.swift */,
+			);
+			path = stats_aux;
+			sourceTree = "<group>";
+		};
+		906BFCAC23553F0900958D44 /* athletes */ = {
+			isa = PBXGroup;
+			children = (
+				906BFCAD23553F3800958D44 /* AthletesInterfaceController.swift */,
+				906BFCAF23553F4500958D44 /* AthletesViewModel.swift */,
+				906BFCB123553F7500958D44 /* AthleteRowController.swift */,
+			);
+			path = athletes;
+			sourceTree = "<group>";
+		};
+		906BFCBC235583BC00958D44 /* stats */ = {
+			isa = PBXGroup;
+			children = (
+				906BFCBD2355840E00958D44 /* StatsInterfaceController.swift */,
+				906BFCBF2355841800958D44 /* StatsViewModel.swift */,
+			);
+			path = stats;
+			sourceTree = "<group>";
+		};
+		906BFCC32356CC2800958D44 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				906BFCC42356CC3A00958D44 /* EventsViewModel.swift */,
+				906BFCC62356CC4C00958D44 /* EventsInterfaceController.swift */,
+				906BFCC82356CCD100958D44 /* EventRowController.swift */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		906BFCCA2356D50800958D44 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				90ABD8C2234FDC92004189A9 /* SimpleRowController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		908E936A234E6E3800C38C08 = {
+			isa = PBXGroup;
+			children = (
+				8E4342B2239EB1760079F22A /* Info.plist */,
+				908E9379234E6E3800C38C08 /* WSLAppleWatch WatchKit App */,
+				908E9388234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension */,
+				908E9372234E6E3800C38C08 /* Products */,
+				EA0CF61966D9436370C7F671 /* Pods */,
+				A05BC6FBC3E733AC72C0DF55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		908E9372234E6E3800C38C08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				908E9371234E6E3800C38C08 /* WSLAppleWatch.app */,
+				908E9375234E6E3800C38C08 /* WSL Competitors Watch App.app */,
+				908E9384234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		908E9379234E6E3800C38C08 /* WSLAppleWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				908E937A234E6E3800C38C08 /* Interface.storyboard */,
+				DE86AACC25BFA0400064AF61 /* HeatPulsing.sks */,
+				908E937D234E6E3900C38C08 /* Assets.xcassets */,
+				908E937F234E6E3900C38C08 /* Info.plist */,
+			);
+			path = "WSLAppleWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		908E9388234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E2E51CE23865D6500D7CFE8 /* WSLAppleWatch WatchKit Extension.entitlements */,
+				906BFCCA2356D50800958D44 /* view */,
+				908E93A3234E71D000C38C08 /* utility */,
+				908E93A2234E71C100C38C08 /* service */,
+				908E93A1234E71BD00C38C08 /* data */,
+				908E93A0234E716800C38C08 /* ui */,
+				908E938B234E6E3900C38C08 /* ExtensionDelegate.swift */,
+				908E938D234E6E3900C38C08 /* NotificationController.swift */,
+				908E938F234E6E3A00C38C08 /* Assets.xcassets */,
+				908E9391234E6E3A00C38C08 /* Info.plist */,
+				908E9392234E6E3A00C38C08 /* PushNotificationPayload.apns */,
+				90AEF0B0234FADCE00019028 /* Environments.plist */,
+			);
+			path = "WSLAppleWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		908E93A0234E716800C38C08 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				906BFCAC23553F0900958D44 /* athletes */,
+				8E4342A9239DC5AB0079F22A /* config */,
+				906BFCC32356CC2800958D44 /* events */,
+				906BFCBC235583BC00958D44 /* stats */,
+				8E92167C239C91B100D279E3 /* stats_aux */,
+				DE86AA9F25BF77C60064AF61 /* stats_takeover */,
+				908E93A4234E71E200C38C08 /* tours */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		908E93A1234E71BD00C38C08 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				908E93AB234E7CB200C38C08 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		908E93A2234E71C100C38C08 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				908E93A7234E7A2E00C38C08 /* NetworkingService.swift */,
+				908E93A9234E7BAB00C38C08 /* OAuth2Handler.swift */,
+				906BFCA02352DC1A00958D44 /* WSLApiService.swift */,
+				8E9740002387C47F004FF34D /* WSLPushService.swift */,
+				8E6849A5241845A4004DEA1B /* LogFileService.swift */,
+				906BFCA42352DE3000958D44 /* Network.swift */,
+				DE6937A8259B240700E07CCD /* LocationService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		908E93A3234E71D000C38C08 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				90AEF0AE234FAC7200019028 /* Constant.swift */,
+				906BFCA22352DDAA00958D44 /* SwinjectUtil.swift */,
+				906BFCAA2355338700958D44 /* Extensions.swift */,
+				906BFCB32355403500958D44 /* RxInterfaceController.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		908E93A4234E71E200C38C08 /* tours */ = {
+			isa = PBXGroup;
+			children = (
+				908E93A5234E721000C38C08 /* ToursInterfaceController.swift */,
+				906BFCA8235532CA00958D44 /* ToursViewModel.swift */,
+			);
+			path = tours;
+			sourceTree = "<group>";
+		};
+		908E93AB234E7CB200C38C08 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8EA415412394719F00E36D48 /* EventStatus.swift */,
+				908E93AE234E946D00C38C08 /* App.swift */,
+				908E93B0234E949500C38C08 /* AppEnvironment.swift */,
+				906BFCB52355614600958D44 /* Athlete.swift */,
+				906BFCC12356CB0400958D44 /* Event.swift */,
+				908E93AC234E7CBC00C38C08 /* OAuthToken.swift */,
+				8E627F2423E15E2B0074EBB6 /* Priority.swift */,
+				906BFCA62352DEF600958D44 /* Tour.swift */,
+				906BFCCB23576AAD00958D44 /* HeatAthlete.swift */,
+				906BFCCD235771F400958D44 /* Heat.swift */,
+				906BFCCF2357A56900958D44 /* Round.swift */,
+				DE86AAF325C49E0B0064AF61 /* StatsTakeOverStatus.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A05BC6FBC3E733AC72C0DF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4342AE239E251C0079F22A /* HealthKit.framework */,
+				8C6BE5F03085D03DF99900AF /* Pods_WSLAppleWatch.framework */,
+				13238C5C7A3D46B9CD1D6C52 /* Pods_WSLAppleWatch_WatchKit_App.framework */,
+				93EEC962CEB797CCBF48E4F0 /* Pods_WSLAppleWatch_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE86AA9F25BF77C60064AF61 /* stats_takeover */ = {
+			isa = PBXGroup;
+			children = (
+				DE86AAA025BF78840064AF61 /* StatsEventTakeoverController.swift */,
+			);
+			path = stats_takeover;
+			sourceTree = "<group>";
+		};
+		EA0CF61966D9436370C7F671 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D7D3280D77AB504EC4AEB4C /* Pods-WSLAppleWatch.debug.xcconfig */,
+				5381C0095028CAFE9327AB9E /* Pods-WSLAppleWatch.release.xcconfig */,
+				DE8B6CCEBD6C019971F71DE6 /* Pods-WSLAppleWatch WatchKit App.debug.xcconfig */,
+				BA806E0F8B8E71E6811EAB65 /* Pods-WSLAppleWatch WatchKit App.release.xcconfig */,
+				B6A4995F41C453B9A0700DF3 /* Pods-WSLAppleWatch WatchKit Extension.debug.xcconfig */,
+				349C5923030C87A71EFD668B /* Pods-WSLAppleWatch WatchKit Extension.release.xcconfig */,
+				1F6DCA2AFF70445B26BEE53B /* Pods-WSLAppleWatch.debugproduction.xcconfig */,
+				C71826912AD7E36E9F110734 /* Pods-WSLAppleWatch.stage.xcconfig */,
+				BEC9677B8BBED08FBFB112FB /* Pods-WSLAppleWatch.slytrunk.xcconfig */,
+				FE1628180FC9E4929CB843A6 /* Pods-WSLAppleWatch.production.xcconfig */,
+				1EE428DAA45FDBEE4E06F49D /* Pods-WSLAppleWatch WatchKit App.debugproduction.xcconfig */,
+				37B33821E15932124FCE86E7 /* Pods-WSLAppleWatch WatchKit App.stage.xcconfig */,
+				3BD35627BC90D07A50F1D00D /* Pods-WSLAppleWatch WatchKit App.slytrunk.xcconfig */,
+				836CB7E44DD11EE6B1AC04F0 /* Pods-WSLAppleWatch WatchKit App.production.xcconfig */,
+				397183B5626120435CD20D79 /* Pods-WSLAppleWatch WatchKit Extension.debugproduction.xcconfig */,
+				5B8151D45FF831E94ACDCF7C /* Pods-WSLAppleWatch WatchKit Extension.stage.xcconfig */,
+				980FCD0C1A0AF3C8E11B3487 /* Pods-WSLAppleWatch WatchKit Extension.slytrunk.xcconfig */,
+				F2AE1ED8A82BAD62216B74EF /* Pods-WSLAppleWatch WatchKit Extension.production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		908E9370234E6E3800C38C08 /* WSLAppleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908E939D234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch" */;
+			buildPhases = (
+				34D354D2F4F76DD5BCFD10E4 /* [CP] Check Pods Manifest.lock */,
+				908E936F234E6E3800C38C08 /* Resources */,
+				908E939C234E6E3A00C38C08 /* Embed Watch Content */,
+				7EAB11BB5604FBB17FEF5565 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				908E9378234E6E3800C38C08 /* PBXTargetDependency */,
+			);
+			name = WSLAppleWatch;
+			productName = WSLAppleWatch;
+			productReference = 908E9371234E6E3800C38C08 /* WSLAppleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		908E9374234E6E3800C38C08 /* WSLAppleWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908E9399234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch WatchKit App" */;
+			buildPhases = (
+				155634BEDB57DA27F7C67375 /* [CP] Check Pods Manifest.lock */,
+				908E9373234E6E3800C38C08 /* Resources */,
+				908E9398234E6E3A00C38C08 /* Embed App Extensions */,
+				E9F1F5D2E5101BC2691F30A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				908E9387234E6E3900C38C08 /* PBXTargetDependency */,
+			);
+			name = "WSLAppleWatch WatchKit App";
+			productName = "WSLAppleWatch WatchKit App";
+			productReference = 908E9375234E6E3800C38C08 /* WSL Competitors Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		908E9383234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908E9395234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch WatchKit Extension" */;
+			buildPhases = (
+				7D01C578BDDC6EF05B0A33F6 /* [CP] Check Pods Manifest.lock */,
+				908E9380234E6E3900C38C08 /* Sources */,
+				908E9381234E6E3900C38C08 /* Frameworks */,
+				908E9382234E6E3900C38C08 /* Resources */,
+				3CF134F78785CD1AA5A133E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WSLAppleWatch WatchKit Extension";
+			productName = "WSLAppleWatch WatchKit Extension";
+			productReference = 908E9384234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		908E936B234E6E3800C38C08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "World Surf League";
+				TargetAttributes = {
+					908E9370234E6E3800C38C08 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					908E9374234E6E3800C38C08 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					908E9383234E6E3900C38C08 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 908E936E234E6E3800C38C08 /* Build configuration list for PBXProject "WSLAppleWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 908E936A234E6E3800C38C08;
+			productRefGroup = 908E9372234E6E3800C38C08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				908E9370234E6E3800C38C08 /* WSLAppleWatch */,
+				908E9374234E6E3800C38C08 /* WSLAppleWatch WatchKit App */,
+				908E9383234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		908E936F234E6E3800C38C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908E9373234E6E3800C38C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908E937E234E6E3900C38C08 /* Assets.xcassets in Resources */,
+				DE86AAD125BFA0570064AF61 /* HeatPulsing.sks in Resources */,
+				908E937C234E6E3800C38C08 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908E9382234E6E3900C38C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90AEF0B1234FADCE00019028 /* Environments.plist in Resources */,
+				DE86AACD25BFA0400064AF61 /* HeatPulsing.sks in Resources */,
+				908E9390234E6E3A00C38C08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		155634BEDB57DA27F7C67375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSLAppleWatch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D354D2F4F76DD5BCFD10E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSLAppleWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CF134F78785CD1AA5A133E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WSLAppleWatch WatchKit Extension/Pods-WSLAppleWatch WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D01C578BDDC6EF05B0A33F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSLAppleWatch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		908E9380234E6E3900C38C08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906BFCC72356CC4C00958D44 /* EventsInterfaceController.swift in Sources */,
+				906BFCC02355841800958D44 /* StatsViewModel.swift in Sources */,
+				906BFCA52352DE3000958D44 /* Network.swift in Sources */,
+				DE86AAA125BF78840064AF61 /* StatsEventTakeoverController.swift in Sources */,
+				908E938E234E6E3900C38C08 /* NotificationController.swift in Sources */,
+				DE6937A9259B240700E07CCD /* LocationService.swift in Sources */,
+				8E4342AC239DC5AB0079F22A /* EnvConfigViewModel.swift in Sources */,
+				906BFCB223553F7500958D44 /* AthleteRowController.swift in Sources */,
+				908E938C234E6E3900C38C08 /* ExtensionDelegate.swift in Sources */,
+				906BFCA12352DC1A00958D44 /* WSLApiService.swift in Sources */,
+				906BFCCE235771F400958D44 /* Heat.swift in Sources */,
+				906BFCBE2355840E00958D44 /* StatsInterfaceController.swift in Sources */,
+				906BFCB023553F4500958D44 /* AthletesViewModel.swift in Sources */,
+				90AEF0AF234FAC7200019028 /* Constant.swift in Sources */,
+				8E9740012387C47F004FF34D /* WSLPushService.swift in Sources */,
+				8E6849A6241845A4004DEA1B /* LogFileService.swift in Sources */,
+				908E93A6234E721000C38C08 /* ToursInterfaceController.swift in Sources */,
+				90ABD8C3234FDC92004189A9 /* SimpleRowController.swift in Sources */,
+				8EA415422394719F00E36D48 /* EventStatus.swift in Sources */,
+				906BFCA9235532CA00958D44 /* ToursViewModel.swift in Sources */,
+				906BFCD02357A56900958D44 /* Round.swift in Sources */,
+				906BFCC22356CB0400958D44 /* Event.swift in Sources */,
+				906BFCA72352DEF600958D44 /* Tour.swift in Sources */,
+				906BFCA32352DDAA00958D44 /* SwinjectUtil.swift in Sources */,
+				908E93A8234E7A2E00C38C08 /* NetworkingService.swift in Sources */,
+				906BFCB62355614600958D44 /* Athlete.swift in Sources */,
+				8E627F2523E15E2C0074EBB6 /* Priority.swift in Sources */,
+				906BFCAB2355338700958D44 /* Extensions.swift in Sources */,
+				908E93AA234E7BAB00C38C08 /* OAuth2Handler.swift in Sources */,
+				906BFCC92356CCD100958D44 /* EventRowController.swift in Sources */,
+				8E4342AD239DC5AB0079F22A /* EnvConfigInterfaceController.swift in Sources */,
+				8E921680239C91B100D279E3 /* StatsAuxInterfaceController.swift in Sources */,
+				908E93B1234E949500C38C08 /* AppEnvironment.swift in Sources */,
+				DE86AAF425C49E0B0064AF61 /* StatsTakeOverStatus.swift in Sources */,
+				908E93AF234E946D00C38C08 /* App.swift in Sources */,
+				8E92167F239C91B100D279E3 /* StatsAuxViewModel.swift in Sources */,
+				906BFCB42355403500958D44 /* RxInterfaceController.swift in Sources */,
+				906BFCCC23576AAD00958D44 /* HeatAthlete.swift in Sources */,
+				906BFCAE23553F3800958D44 /* AthletesInterfaceController.swift in Sources */,
+				906BFCC52356CC3A00958D44 /* EventsViewModel.swift in Sources */,
+				908E93AD234E7CBC00C38C08 /* OAuthToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		908E9378234E6E3800C38C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 908E9374234E6E3800C38C08 /* WSLAppleWatch WatchKit App */;
+			targetProxy = 908E9377234E6E3800C38C08 /* PBXContainerItemProxy */;
+		};
+		908E9387234E6E3900C38C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 908E9383234E6E3900C38C08 /* WSLAppleWatch WatchKit Extension */;
+			targetProxy = 908E9386234E6E3900C38C08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		908E937A234E6E3800C38C08 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				908E937B234E6E3800C38C08 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		908E9393234E6E3A00C38C08 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DebugProduction;
+		};
+		908E9394234E6E3A00C38C08 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		908E9396234E6E3A00C38C08 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 397183B5626120435CD20D79 /* Pods-WSLAppleWatch WatchKit Extension.debugproduction.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WSLAppleWatch WatchKit Extension/WSLAppleWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = DebugProduction;
+		};
+		908E9397234E6E3A00C38C08 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AE1ED8A82BAD62216B74EF /* Pods-WSLAppleWatch WatchKit Extension.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WSLAppleWatch WatchKit Extension/WSLAppleWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Production;
+		};
+		908E939A234E6E3A00C38C08 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE428DAA45FDBEE4E06F49D /* Pods-WSLAppleWatch WatchKit App.debugproduction.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				IBSC_MODULE = WSLAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp;
+				PRODUCT_NAME = "WSL Competitors Watch App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = DebugProduction;
+		};
+		908E939B234E6E3A00C38C08 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836CB7E44DD11EE6B1AC04F0 /* Pods-WSLAppleWatch WatchKit App.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				IBSC_MODULE = WSLAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp;
+				PRODUCT_NAME = "WSL Competitors Watch App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Production;
+		};
+		908E939E234E6E3A00C38C08 /* DebugProduction */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6DCA2AFF70445B26BEE53B /* Pods-WSLAppleWatch.debugproduction.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = DebugProduction;
+		};
+		908E939F234E6E3A00C38C08 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1628180FC9E4929CB843A6 /* Pods-WSLAppleWatch.production.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Production;
+		};
+		90AEF0B2234FAE2200019028 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Stage;
+		};
+		90AEF0B3234FAE2200019028 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71826912AD7E36E9F110734 /* Pods-WSLAppleWatch.stage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Stage;
+		};
+		90AEF0B4234FAE2200019028 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B33821E15932124FCE86E7 /* Pods-WSLAppleWatch WatchKit App.stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				IBSC_MODULE = WSLAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp;
+				PRODUCT_NAME = "WSL Competitors Watch App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Stage;
+		};
+		90AEF0B5234FAE2200019028 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8151D45FF831E94ACDCF7C /* Pods-WSLAppleWatch WatchKit Extension.stage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WSLAppleWatch WatchKit Extension/WSLAppleWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Stage;
+		};
+		90AEF0B6234FAE2E00019028 /* Slytrunk */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Slytrunk;
+		};
+		90AEF0B7234FAE2E00019028 /* Slytrunk */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC9677B8BBED08FBFB112FB /* Pods-WSLAppleWatch.slytrunk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Slytrunk;
+		};
+		90AEF0B8234FAE2E00019028 /* Slytrunk */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD35627BC90D07A50F1D00D /* Pods-WSLAppleWatch WatchKit App.slytrunk.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				IBSC_MODULE = WSLAppleWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp;
+				PRODUCT_NAME = "WSL Competitors Watch App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Slytrunk;
+		};
+		90AEF0B9234FAE2E00019028 /* Slytrunk */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980FCD0C1A0AF3C8E11B3487 /* Pods-WSLAppleWatch WatchKit Extension.slytrunk.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WSLAppleWatch WatchKit Extension/WSLAppleWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 9LE44EN3VY;
+				INFOPLIST_FILE = "WSLAppleWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldsurfleague.WSLAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Slytrunk;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		908E936E234E6E3800C38C08 /* Build configuration list for PBXProject "WSLAppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908E9393234E6E3A00C38C08 /* DebugProduction */,
+				90AEF0B2234FAE2200019028 /* Stage */,
+				90AEF0B6234FAE2E00019028 /* Slytrunk */,
+				908E9394234E6E3A00C38C08 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Stage;
+		};
+		908E9395234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908E9396234E6E3A00C38C08 /* DebugProduction */,
+				90AEF0B5234FAE2200019028 /* Stage */,
+				90AEF0B9234FAE2E00019028 /* Slytrunk */,
+				908E9397234E6E3A00C38C08 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Stage;
+		};
+		908E9399234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908E939A234E6E3A00C38C08 /* DebugProduction */,
+				90AEF0B4234FAE2200019028 /* Stage */,
+				90AEF0B8234FAE2E00019028 /* Slytrunk */,
+				908E939B234E6E3A00C38C08 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Stage;
+		};
+		908E939D234E6E3A00C38C08 /* Build configuration list for PBXNativeTarget "WSLAppleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908E939E234E6E3A00C38C08 /* DebugProduction */,
+				90AEF0B3234FAE2200019028 /* Stage */,
+				90AEF0B7234FAE2E00019028 /* Slytrunk */,
+				908E939F234E6E3A00C38C08 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Stage;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 908E936B234E6E3800C38C08 /* Project object */;
+}

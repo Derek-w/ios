@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Stage</key>
+	<dict>
+		<key>apiBaseUrl</key>
+		<string>https://api.staging.worldsurfleague.com</string>
+		<key>pushApiBaseUrl</key>
+		<string>https://vpl34k4j2a.execute-api.us-west-2.amazonaws.com/dev</string>
+		<key>pushWssBaseUrl</key>
+		<string>wss://olz7xrh85i.execute-api.us-west-2.amazonaws.com/dev</string>
+	</dict>
+	<key>DebugProduction</key>
+	<dict>
+		<key>apiBaseUrl</key>
+		<string>https://api.worldsurfleague.com</string>
+		<key>pushApiBaseUrl</key>
+		<string>https://n7optohto4.execute-api.us-west-2.amazonaws.com/prod</string>
+		<key>pushWssBaseUrl</key>
+		<string>wss://olz7xrh85i.execute-api.us-west-2.amazonaws.com/dev</string>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>apiBaseUrl</key>
+		<string>https://api.worldsurfleague.com</string>
+		<key>pushApiBaseUrl</key>
+		<string>https://n7optohto4.execute-api.us-west-2.amazonaws.com/prod</string>
+		<key>pushWssBaseUrl</key>
+		<string>wss://bq2uzfeawj.execute-api.us-west-2.amazonaws.com/prod</string>
+	</dict>
+</dict>
+</plist>

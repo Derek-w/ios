@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target 'WSLAppleWatch' do
+  platform :watchos, '6.0'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+
+end
+
+target 'WSLAppleWatch WatchKit App' do
+  platform :watchos, '6.0'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WSLAppleWatch WatchKit App
+
+end
+
+target 'WSLAppleWatch WatchKit Extension' do
+  platform :watchos, '6.0'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'Himotoki'
+  pod 'RxAlamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'CocoaLumberjack/Swift'
+  pod 'Swinject'
+  pod 'Nuke'
+
+  # Pods for WSLAppleWatch WatchKit Extension
+
+end

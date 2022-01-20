@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tours-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Tour" title="Tours" id="AgC-eL-Hgc" customClass="ToursInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" spacing="5" id="pln-xV-j9m">
+                            <items>
+                                <tableRow identifier="TourRow" id="jdD-47-nIH" customClass="SimpleRowController" customModule="WSLAppleWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="36" alignment="left" id="o7a-92-iNc">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Men's Championship Tour" textAlignment="left" numberOfLines="2" id="iML-MT-EOc">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="iML-MT-EOc" id="Udn-WW-vgy"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tourTable" destination="pln-xV-j9m" id="RoL-gy-lKm"/>
+                        <segue destination="x4C-RG-gMB" kind="relationship" relationship="nextPage" id="dro-th-D6r"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="199"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="wQv-iA-6pG">
+            <objects>
+                <controller identifier="Events" title="Events" id="H2g-XB-hwh" customClass="EventsInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" spacing="5" id="z4a-wj-w9K">
+                            <items>
+                                <tableRow identifier="EventRow" id="2ah-P9-fNk" customClass="SimpleRowController" customModule="WSLAppleWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="36" alignment="left" id="shq-4a-gUT">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="lulemon Maui Pro" textAlignment="left" numberOfLines="2" id="eMZ-WX-lGA">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="eMZ-WX-lGA" id="65g-5C-yBA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="eventsTable" destination="z4a-wj-w9K" id="tw9-2e-zjw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="188"/>
+        </scene>
+        <!--Athletes-->
+        <scene sceneID="RcA-JI-sKZ">
+            <objects>
+                <controller identifier="Athletes" title="Athletes" id="lOY-x7-tED" customClass="AthletesInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" spacing="5" id="czj-ZZ-GGP">
+                            <items>
+                                <tableRow identifier="AthleteRow" id="z6J-hN-BrO" customClass="SimpleRowController" customModule="WSLAppleWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="36" alignment="left" id="icx-SA-4Zw">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Tatiana Weston-Webb" textAlignment="left" id="Y8r-eF-fIE">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="Y8r-eF-fIE" id="kfM-Xv-ujV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="athleteTable" destination="czj-ZZ-GGP" id="Uhg-Lq-e0E"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="679" y="188"/>
+        </scene>
+        <!--    -->
+        <scene sceneID="YwS-J8-dCl">
+            <objects>
+                <controller identifier="StatsAux" title="    " id="7Kn-uh-Ace" customClass="StatsAuxInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="44" alignment="left" verticalAlignment="bottom" title="EXIT" id="BS7-ch-1Dm">
+                            <connections>
+                                <action selector="exitPressed" destination="7Kn-uh-Ace" id="xDo-Sn-Add"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1364.1975308641975" y="193.73096446700507"/>
+        </scene>
+        <!--     -->
+        <scene sceneID="aaS-ic-maw">
+            <objects>
+                <controller identifier="Stats" title="     " id="b6c-oJ-rs8" customClass="StatsInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="176" alignment="left" layout="vertical" spacing="2" id="aGN-pa-Iy5">
+                            <items>
+                                <group width="1" height="0.20000000000000001" alignment="left" spacing="0.0" id="1Pd-E7-FIJ">
+                                    <items>
+                                        <group alignment="left" id="mel-Ph-lnC">
+                                            <items>
+                                                <timer height="1" alignment="left" id="GWw-zK-aod">
+                                                    <fontDescription key="font" type="system" weight="medium" pointSize="43"/>
+                                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                                    <variation key="device=watch40mm">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="39"/>
+                                                    </variation>
+                                                </timer>
+                                            </items>
+                                        </group>
+                                        <group width="0.20000000000000001" alignment="left" id="mli-Kg-dSl">
+                                            <items>
+                                                <spriteKitScene width="34" height="34" alignment="left" scene="HeatPulsing.sks" id="67m-ra-adL">
+                                                    <variation key="device=watch40mm" height="30" width="30"/>
+                                                </spriteKitScene>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.17999999999999999" alignment="left" spacing="4" id="idU-19-QPK">
+                                    <items>
+                                        <group alignment="left" layout="vertical" spacing="0.0" id="0yH-cV-yiW">
+                                            <items>
+                                                <label height="1" alignment="left" verticalAlignment="center" text="00.00" textAlignment="left" id="Mnh-Pw-6dC" userLabel="Score Label">
+                                                    <fontDescription key="font" type="system" weight="light" pointSize="43"/>
+                                                    <variation key="device=watch40mm">
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="39"/>
+                                                    </variation>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group height="1" alignment="left" layout="vertical" spacing="0.0" id="r4n-wO-x2G">
+                                            <items>
+                                                <group width="1" alignment="left" layout="vertical" spacing="0.0" id="WUR-SX-5WV">
+                                                    <items>
+                                                        <label alignment="left" text="SCORE" numberOfLines="0" id="mdI-kG-G2r">
+                                                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                                            <variation key="device=watch40mm">
+                                                                <fontDescription key="font" type="system" weight="medium" pointSize="10"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label alignment="left" text="0.00 + 0.00" id="m4H-ZC-ggY">
+                                                            <color key="textColor" name="WSLBlue"/>
+                                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                                            <variation key="device=watch40mm">
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </variation>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.55000000000000004" alignment="left" layout="overlap" id="lKO-Ib-Hb5">
+                                    <items>
+                                        <group width="1" height="0.39000000000000001" alignment="left" spacing="3" id="jma-CB-Bh5">
+                                            <items>
+                                                <group height="1" alignment="left" layout="vertical" spacing="0.0" id="6VA-z1-hdp">
+                                                    <items>
+                                                        <label height="1" alignment="left" verticalAlignment="center" text="0.00" textAlignment="left" id="Eic-21-a82" userLabel="Score Label">
+                                                            <fontDescription key="font" type="system" weight="light" pointSize="43"/>
+                                                            <variation key="device=watch40mm">
+                                                                <fontDescription key="font" type="system" weight="light" pointSize="39"/>
+                                                            </variation>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                                <group height="1" alignment="left" layout="vertical" spacing="0.0" id="Ekf-bh-noO">
+                                                    <items>
+                                                        <label width="0.69999999999999996" alignment="left" text="NEEDS TO ADVANCE" numberOfLines="2" id="Eb5-pY-vrV">
+                                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                                            <variation key="device=watch40mm">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </variation>
+                                                        </label>
+                                                    </items>
+                                                    <edgeInsets key="margins" left="0.0" right="0.0" top="2" bottom="0.0"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" height="0.54000000000000004" alignment="center" verticalAlignment="bottom" hidden="YES" id="1z1-9l-kTa" userLabel="OwnPriority">
+                                            <items>
+                                                <label alignment="center" verticalAlignment="center" text="PRIORITY" textAlignment="center" id="DpQ-e5-i4Q">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="37"/>
+                                                    <variation key="device=watch40mm">
+                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="37"/>
+                                                    </variation>
+                                                    <variation key="device=watch44mm">
+                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="40"/>
+                                                    </variation>
+                                                </label>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="5"/>
+                                        </group>
+                                        <group width="1" height="0.69999999999999996" alignment="center" verticalAlignment="bottom" spacing="16" id="LSb-0W-3sI">
+                                            <items>
+                                                <group width="0.25" height="1" alignment="center" verticalAlignment="center" id="CxM-WG-kaA">
+                                                    <items>
+                                                        <group width="0.88" height="0.88" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="vPp-Rn-XaR">
+                                                            <items>
+                                                                <label width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="Ynw-mi-tlJ">
+                                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                                </label>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                                <group width="0.25" height="1" alignment="center" verticalAlignment="center" radius="6" id="n9t-wd-Nx8">
+                                                    <items>
+                                                        <group width="0.88" height="0.88" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="vpY-93-RIH">
+                                                            <items>
+                                                                <label width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="6r0-XO-B9m">
+                                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                                </label>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                                <group width="0.25" height="1" alignment="center" verticalAlignment="center" radius="6" id="Vsb-7v-DFc">
+                                                    <items>
+                                                        <group width="0.88" height="0.88" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="HYv-yQ-QcQ">
+                                                            <items>
+                                                                <label width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="vdd-z2-5WP">
+                                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                                </label>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                                <group width="0.25" height="1" alignment="center" verticalAlignment="center" radius="6" id="aaJ-Jr-UUF">
+                                                    <items>
+                                                        <group width="0.88" height="0.88" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="n0T-At-0TG">
+                                                            <items>
+                                                                <label width="0.90000000000000002" height="0.90000000000000002" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="Wff-Nr-QGH">
+                                                                    <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                                                </label>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="1" bottom="2"/>
+                                            <variation key="device=watch40mm" spacing="13"/>
+                                            <variation key="device=watch44mm">
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                            </variation>
+                                        </group>
+                                        <group width="1" height="0.57999999999999996" alignment="center" verticalAlignment="bottom" hidden="YES" layout="vertical" spacing="4" id="DDe-Y3-N2T">
+                                            <items>
+                                                <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" spacing="0.0" id="rll-zr-MKy">
+                                                    <items>
+                                                        <imageView alignment="center" image="square.and.arrow.up.fill" catalog="system" contentMode="scaleAspectFit" id="4TE-PP-rJn">
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <separator alignment="center" id="cg2-Tk-kZQ">
+                                                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </separator>
+                                                    </items>
+                                                    <edgeInsets key="margins" left="7" right="7" top="1" bottom="1"/>
+                                                </group>
+                                                <label alignment="center" verticalAlignment="bottom" text="Updating" id="Fhc-CD-8hk">
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                    <variation key="device=watch40mm">
+                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="18"/>
+                                                    </variation>
+                                                </label>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="5"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <variation key="device=watch40mm" height="176"/>
+                            <variation key="device=watch44mm" height="196"/>
+                        </group>
+                        <group width="1" alignment="left" hidden="YES" id="Qu8-TW-yab">
+                            <items>
+                                <label alignment="left" text="Loading..." textAlignment="center" id="KD7-5K-Rpp"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="boarderView1" destination="vPp-Rn-XaR" id="jZn-L9-9xz"/>
+                        <outlet property="boarderView2" destination="vpY-93-RIH" id="ZOv-Dy-oh7"/>
+                        <outlet property="boarderView3" destination="HYv-yQ-QcQ" id="f4f-tt-KQq"/>
+                        <outlet property="boarderView4" destination="n0T-At-0TG" id="Xoy-6Q-nZu"/>
+                        <outlet property="countdownTimer" destination="GWw-zK-aod" id="sah-5I-xcB"/>
+                        <outlet property="fullGroup" destination="aGN-pa-Iy5" id="slT-Od-GaV"/>
+                        <outlet property="heatPulsingView" destination="67m-ra-adL" id="ME9-RX-cwU"/>
+                        <outlet property="heatScoreTitle" destination="mdI-kG-G2r" id="CBc-GY-7Pg"/>
+                        <outlet property="loadingGroup" destination="Qu8-TW-yab" id="cu4-Cl-SXo"/>
+                        <outlet property="loadingLabel" destination="KD7-5K-Rpp" id="lwV-7k-S9U"/>
+                        <outlet property="needsDetailLabel" destination="Eb5-pY-vrV" id="mvO-qL-Fqn"/>
+                        <outlet property="needsScoreLabel" destination="Eic-21-a82" id="mXc-ab-ga8"/>
+                        <outlet property="offlineWaveImage" destination="4TE-PP-rJn" id="oht-6R-Ual"/>
+                        <outlet property="offlineWaveView" destination="DDe-Y3-N2T" id="wA5-7G-TTE"/>
+                        <outlet property="ownPriorityLabel" destination="DpQ-e5-i4Q" id="xuI-aE-lVg"/>
+                        <outlet property="ownPriorityView" destination="1z1-9l-kTa" id="IVV-2y-MIu"/>
+                        <outlet property="priorityGroup1" destination="CxM-WG-kaA" id="ybM-lW-h4g"/>
+                        <outlet property="priorityGroup2" destination="n9t-wd-Nx8" id="5bD-vw-wKr"/>
+                        <outlet property="priorityGroup3" destination="Vsb-7v-DFc" id="aDz-F8-LxV"/>
+                        <outlet property="priorityGroup4" destination="aaJ-Jr-UUF" id="oCs-6U-u03"/>
+                        <outlet property="priorityLabel1" destination="Ynw-mi-tlJ" id="QUD-Ti-wl5"/>
+                        <outlet property="priorityLabel2" destination="6r0-XO-B9m" id="Mzf-le-asR"/>
+                        <outlet property="priorityLabel3" destination="vdd-z2-5WP" id="UqR-Xd-Gx9"/>
+                        <outlet property="priorityLabel4" destination="Wff-Nr-QGH" id="9qV-NV-GaL"/>
+                        <outlet property="priorityView" destination="LSb-0W-3sI" id="sL0-9G-jEG"/>
+                        <outlet property="scoreLabel" destination="Mnh-Pw-6dC" id="JwJ-kV-7j8"/>
+                        <outlet property="top2ScoresLabel" destination="m4H-ZC-ggY" id="HWA-QA-jeu"/>
+                        <segue destination="7Kn-uh-Ace" kind="relationship" relationship="nextPage" id="PiP-mD-a3Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1125.7777777777778" y="191.57360406091368"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WSL_Competitors_Watch_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="1038"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WSL_Competitors_Watch_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="1038"/>
+        </scene>
+        <!--EnvConfig-->
+        <scene sceneID="Tdf-zz-e08">
+            <objects>
+                <controller identifier="EnvConfig" id="x4C-RG-gMB" customClass="EnvConfigInterfaceController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Upload Log Files" id="W2D-Oy-crk"/>
+                        <button width="1" alignment="left" title="Upload" id="1T8-fx-ZIk">
+                            <color key="backgroundColor" name="WSLBlue"/>
+                            <connections>
+                                <action selector="sendLogFilesPressed" destination="x4C-RG-gMB" id="tlO-aE-tEd"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Set Environment" id="QYO-vj-Par"/>
+                        <button width="1" alignment="left" title="Prod" id="ZD0-uA-7bn">
+                            <color key="backgroundColor" name="WSLBlue"/>
+                            <connections>
+                                <action selector="prodPressed" destination="x4C-RG-gMB" id="RrU-lj-13B"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stage" id="j8x-DB-4kT">
+                            <connections>
+                                <action selector="stagePressed" destination="x4C-RG-gMB" id="Vqh-j7-3wX"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="prodButton" destination="ZD0-uA-7bn" id="UMk-Ds-h2q"/>
+                        <outlet property="stageButton" destination="j8x-DB-4kT" id="Ln8-Dj-kcz"/>
+                        <outlet property="uploadLogsButton" destination="1T8-fx-ZIk" id="o3C-nH-dJ9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="417" y="561"/>
+        </scene>
+        <!--Stats Takeover Controller-->
+        <scene sceneID="1PK-eW-8SK">
+            <objects>
+                <controller identifier="StatsTakeover" id="NEX-Jg-4XQ" userLabel="Stats Takeover Controller" customClass="StatsEventTakeoverController" customModule="WSLAppleWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.75" alignment="center" layout="vertical" id="dPG-05-dxe">
+                            <items>
+                                <label alignment="center" verticalAlignment="bottom" text="⚠" id="2j8-qT-wlT">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="light" pointSize="54"/>
+                                    <variation key="device=watch44mm">
+                                        <fontDescription key="font" type="system" weight="light" pointSize="58"/>
+                                    </variation>
+                                </label>
+                                <label alignment="center" verticalAlignment="bottom" text="INTERFERENCE" textAlignment="center" numberOfLines="2" id="fac-kY-rzf">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="22"/>
+                                    <variation key="device=watch44mm">
+                                        <fontDescription key="font" type="system" weight="semibold" pointSize="26"/>
+                                    </variation>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="glyphLabel" destination="2j8-qT-wlT" id="RN0-An-T7i"/>
+                        <outlet property="warningTitleLabel" destination="fac-kY-rzf" id="dgo-3F-vGF"/>
+                        <outlet property="warningView" destination="dPG-05-dxe" id="H7N-N0-VJy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1591" y="194"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <namedColor name="WSLBlue">
+            <color red="0.12549019607843137" green="0.58039215686274515" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
